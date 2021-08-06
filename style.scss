@@ -164,4 +164,58 @@ body{
         }
           
     }
+    .posts1{
+        display: block;
+        width: 100%;
+        height: 360px;
+        .Category__menu{
+            display: inline-block;
+            position: relative;
+            overflow: hidden;
+            width: 25%;
+            height: 100%;
+            padding: 0px;
+            background-color: skyblue;
+        }
+        .Banner1{
+            display: inline-block;
+            position: relative;
+            width: 35%;
+            height: 100%;
+            padding:0px;
+            margin: 0px;
+            background-color: slateblue;
+        }
+        .Banner2{
+            display: inline-block;
+            position: relative;
+            width: 35%;
+            height: 100%;
+            background-color: tomato;
+        }
+    }
+    .posts2{
+        display: block;
+        width: 100%;
+        height: 360px;
+        background-color: blue;
+    }
+    .posts3{
+        display: block;
+        width: 100%;
+        height: 360px;
+        background-color: black;
+    }
+    .posts4{
+        display: block;
+        width: 100%;
+        height: 360px;
+        background-color:yellow;
+    }
+    .posts5{
+        display: block;
+        width: 100%;
+        height: 360px;
+        background-color: pink;
+    }
 }
