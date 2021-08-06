@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"/>
+      <title>Template</title>
+    </head>
+    <body>
+        <div id="app" class="home">
+            <div class="top__menu">
+                <div class="contact_menu">
+                    <a id="chat">Chat with us</a>
+                    <a>+91 7488744190</a>
+                    <a>sak19jha@gmail.com</a>
+                </div>
+                <div class="right_menu">
+                    <ul class="top__navigation">
+                        <li><a href="Blog">Blog</a></li>
+                        <li><a href="About">About Us</a></li>
+                        <li><a href="Careers">Careers</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="heading">
+                <div class="logo">
+                    <h1>Freshnesecom</h1>
+                </div>
+                <div class="search__baar">
+                    <div class="search__box">
+                        <div class="porduct">
+                          <button class="bakery" onclick="myFunction()">All Category
+                            <i class="arrow__down"></i>
+                          </button>
+                          <div class="dropdown-content" id="myDropdown">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile__cart">
+                </div>
+            </div>
+            <div class="navigation">
+                <div class="dropdown">
+                    <button class="bakery" onclick="myFunction()">Bakery
+                      <i class="arrow__down"></i>
+                    </button>
+                    <div class="dropdown-content" id="myDropdown">
+                      <a href="#">Link 1</a>
+                      <a href="#">Link 2</a>
+                      <a href="#">Link 3</a>
+                    </div>
+                    <button class="bakery" onclick="myFunction()">Fruit and vegitable
+                      <i class="arrow__down"></i>
+                    </button>
+                    <div class="dropdown-content" id="myDropdown">
+                      <a href="#">Link 1</a>
+                      <a href="#">Link 2</a>
+                      <a href="#">Link 3</a>
+                    </div>
+                    <button class="bakery" onclick="myFunction()">Meat and fish
+                      <i class="arrow__down"></i>
+                    </button>
+                    <div class="dropdown-content" id="myDropdown">
+                      <a href="#">Link 1</a>
+                      <a href="#">Link 2</a>
+                      <a href="#">Link 3</a>
+                    </div>
+                    <button class="bakery" onclick="myFunction()">Drinks
+                      <i class="arrow__down"></i>
+                    </button>
+                    <div class="dropdown-content" id="myDropdown">
+                      <a href="#">Link 1</a>
+                      <a href="#">Link 2</a>
+                      <a href="#">Link 3</a>
+                    </div>
+                    <button class="bakery" onclick="myFunction()">Kitchen
+                      <i class="arrow__down"></i>
+                    </button>
+                    <div class="dropdown-content" id="myDropdown">
+                      <a href="#">Link 1</a>
+                      <a href="#">Link 2</a>
+                      <a href="#">Link 3</a>
+                    </div>
+                    <button class="bakery" onclick="myFunction()">Special Nutrition
+                      <i class="arrow__down"></i>
+                    </button>
+                    <div class="dropdown-content" id="myDropdown">
+                      <a href="#">Link 1</a>
+                      <a href="#">Link 2</a>
+                      <a href="#">Link 3</a>
+                    </div>
+                    <button class="bakery" onclick="myFunction()">Baby
+                      <i class="arrow__down"></i>
+                    </button>
+                    <div class="dropdown-content" id="myDropdown">
+                      <a href="#">Link 1</a>
+                      <a href="#">Link 2</a>
+                      <a href="#">Link 3</a>
+                    </div>
+                    <button class="bakery" onclick="myFunction()">Pharmacy
+                      <i class="arrow__down"></i>
+                    </button>
+                    <div class="dropdown-content" id="myDropdown">
+                      <a href="#">Link 1</a>
+                      <a href="#">Link 2</a>
+                      <a href="#">Link 3</a>
+                    </div>
+                </div> 
+            </div>
+        </div>
+        <script>
+            /* When the user clicks on the button, 
+            toggle between hiding and showing the dropdown content */
+            function myFunction() {
+              document.getElementById("myDropdown").classList.toggle("show");
+            }
+            
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function(e) {
+              if (!e.target.matches('.dropbtn')) {
+              var myDropdown = document.getElementById("myDropdown");
+                if (myDropdown.classList.contains('show')) {
+                  myDropdown.classList.remove('show');
+                }
+              }
+            }
+            </script>
+    </body>
+</html>
