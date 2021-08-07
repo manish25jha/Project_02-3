@@ -520,15 +520,235 @@ body {
   background-color: #49a046;
   border: 2px solid #0d460b;
 }
-#app .posts4 {
-  display: block;
+#app .Customer_review {
+  display: flex;
+  flex-wrap: wrap;
   width: 100%;
   height: 360px;
-  background-color: yellow;
 }
-#app .posts5 {
-  display: block;
+#app .posts4 {
+  display: flex;
+  flex-wrap: wrap;
   width: 100%;
   height: 360px;
-  background-color: pink;
+}
+#app .posts4 .Product1 {
+  display: inline-block;
+  position: relative;
+  width: 25%;
+  height: 100%;
+}
+#app .posts4 .Product1 .container {
+  position: relative;
+  width: 85%;
+  height: 90%;
+  margin: 20px;
+  padding: 30px 28px;
+  border-radius: 10px;
+  border: 2px solid #c7c4c4;
+}
+#app .posts4 .Product1 .container .sub_container {
+  position: relative;
+  width: 98%;
+  height: 70%;
+  border-radius: 10px;
+  background-color: #eeeaea;
+}
+#app .posts4 .Product1 .container h4 {
+  padding: 10px 0px;
+}
+#app .posts4 .Product1 .container p {
+  font-size: 12px;
+}
+#app .posts4 .Product1 .container button {
+  margin-left: 45px;
+  padding: 8px;
+  font-weight: bold;
+  border-radius: 10px;
+  background-color: #49a046;
+  border: 2px solid #0d460b;
+}
+#app .posts4 .Product2 {
+  display: inline-block;
+  position: relative;
+  width: 25%;
+  height: 100%;
+}
+#app .posts4 .Product2 .container {
+  position: relative;
+  width: 85%;
+  height: 90%;
+  margin: 20px;
+  padding: 30px 28px;
+  border-radius: 10px;
+  border: 2px solid #c7c4c4;
+}
+#app .posts4 .Product2 .container .sub_container {
+  position: relative;
+  width: 98%;
+  height: 70%;
+  border-radius: 10px;
+  background-color: #eeeaea;
+}
+#app .posts4 .Product2 .container h4 {
+  padding: 10px 0px;
+}
+#app .posts4 .Product2 .container p {
+  font-size: 12px;
+}
+#app .posts4 .Product2 .container button {
+  margin-left: 45px;
+  padding: 8px;
+  font-weight: bold;
+  border-radius: 10px;
+  background-color: #49a046;
+  border: 2px solid #0d460b;
+}
+#app .posts4 .Product3 {
+  position: relative;
+  float: right;
+  width: 25%;
+  height: 100%;
+}
+#app .posts4 .Product3 .container {
+  position: relative;
+  width: 85%;
+  height: 90%;
+  margin: 20px;
+  padding: 30px 28px;
+  border-radius: 10px;
+  border: 2px solid #c7c4c4;
+}
+#app .posts4 .Product3 .container .sub_container {
+  position: relative;
+  width: 98%;
+  height: 70%;
+  border-radius: 10px;
+  background-color: #eeeaea;
+}
+#app .posts4 .Product3 .container h4 {
+  padding: 10px 0px;
+}
+#app .posts4 .Product3 .container p {
+  font-size: 12px;
+}
+#app .posts4 .Product3 .container button {
+  margin-left: 45px;
+  padding: 8px;
+  font-weight: bold;
+  border-radius: 10px;
+  background-color: #49a046;
+  border: 2px solid #0d460b;
+}
+#app .posts4 .Product4 {
+  position: relative;
+  float: right;
+  width: 25%;
+  height: 100%;
+}
+#app .posts4 .Product4 .container {
+  position: relative;
+  width: 85%;
+  height: 90%;
+  margin: 20px;
+  padding: 30px 28px;
+  border-radius: 10px;
+  border: 2px solid #c7c4c4;
+}
+#app .posts4 .Product4 .container .sub_container {
+  position: relative;
+  width: 98%;
+  height: 70%;
+  border-radius: 10px;
+  background-color: #eeeaea;
+}
+#app .posts4 .Product4 .container h4 {
+  padding: 10px 0px;
+}
+#app .posts4 .Product4 .container p {
+  font-size: 12px;
+}
+#app .posts4 .Product4 .container button {
+  margin-left: 45px;
+  padding: 8px;
+  font-weight: bold;
+  border-radius: 10px;
+  background-color: #49a046;
+  border: 2px solid #0d460b;
+}
+#app .Blog_area {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 500px;
+}
+#app .Blog_area .containt_area {
+  display: block;
+  position: relative;
+  align-self: center;
+  width: 98%;
+  height: 95%;
+  margin: auto;
+  padding: 30px 28px;
+}
+#app .Blog_area .containt_area .top__bar {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 13%;
+  padding: 5px 20px;
+}
+#app .Blog_area .containt_area .top__bar button {
+  padding: 8px;
+  margin-left: 920px;
+  font-weight: bold;
+  border-radius: 10px;
+  border: 2px solid #0d460b;
+}
+#app .Blog_area .containt_area .main__info {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 93%;
+  padding: 10px 20px;
+}
+#app .Blog_area .containt_area .main__info .box1 {
+  display: inline-block;
+  position: relative;
+  width: 40%;
+  height: 95%;
+  background-color: #c7c4c4;
+  border-radius: 10px;
+}
+#app .Blog_area .containt_area .main__info .box2 {
+  display: inline-block;
+  position: relative;
+  width: 20%;
+  height: 95%;
+  margin-left: 25px;
+}
+#app .Blog_area .containt_area .main__info .box2 .sub_container {
+  position: relative;
+  width: 92%;
+  height: 50%;
+  margin: 10px 10px;
+  border-radius: 10px;
+  background-color: #eeeaea;
+}
+#app .Blog_area .containt_area .main__info .box3 {
+  display: inline-block;
+  position: relative;
+  width: 20%;
+  height: 95%;
+  margin-left: 25px;
+}
+#app .Blog_area .containt_area .main__info .box4 {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  width: 13%;
+  height: 95%;
+  float: right;
+  margin-left: auto;
+  background-color: tomato;
 }/*# sourceMappingURL=style.css.map */
