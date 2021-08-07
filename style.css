@@ -718,7 +718,16 @@ body {
   width: 40%;
   height: 95%;
   background-color: #c7c4c4;
+  background-image: linear-gradient(white, black);
   border-radius: 10px;
+}
+#app .Blog_area .containt_area .main__info .box1 button {
+  margin: 20px 15px;
+  padding: 3px 5px;
+  border-radius: 11px;
+  color: #49a046;
+  font-size: 15px;
+  border: none;
 }
 #app .Blog_area .containt_area .main__info .box2 {
   display: inline-block;
@@ -735,12 +744,37 @@ body {
   border-radius: 10px;
   background-color: #eeeaea;
 }
+#app .Blog_area .containt_area .main__info .box2 button {
+  margin: 10px;
+  padding: 3px 5px;
+  border-radius: 11px;
+  color: #49a046;
+  font-size: 15px;
+  border: none;
+}
+#app .Blog_area .containt_area .main__info .box2 h4 {
+  margin: 10px;
+  font-weight: bold;
+}
+#app .Blog_area .containt_area .main__info .box2 p {
+  margin: 10px;
+  word-spacing: 10px;
+  font-size: 12px;
+}
 #app .Blog_area .containt_area .main__info .box3 {
   display: inline-block;
   position: relative;
   width: 20%;
   height: 95%;
   margin-left: 25px;
+}
+#app .Blog_area .containt_area .main__info .box3 h3 {
+  margin: 10px;
+}
+#app .Blog_area .containt_area .main__info .box3 p {
+  margin: 0px 0px 48px 10px;
+  word-spacing: 10px;
+  font-size: 12px;
 }
 #app .Blog_area .containt_area .main__info .box4 {
   display: flex;
@@ -750,5 +784,52 @@ body {
   height: 95%;
   float: right;
   margin-left: auto;
-  background-color: tomato;
+}
+#app .Blog_area .containt_area .main__info .box4 .stiker {
+  display: block;
+  position: relative;
+  width: 61%;
+  height: 25%;
+  margin: 10px 20px 10px 29px;
+  background-color: #eeeaea;
+  border-radius: 10px;
+}
+#app .bottom__menu {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 250px;
+  padding: 20px 60px;
+}
+#app .bottom__menu li {
+  list-style-type: none;
+  padding-top: 10px;
+}
+#app .bottom__menu li a {
+  text-decoration: none;
+  color: #49a046;
+}
+#app .bottom__menu .col_1 {
+  display: inline-block;
+  position: relative;
+  width: 25%;
+  height: 100%;
+}
+#app .bottom__menu .col_2 {
+  display: inline-block;
+  position: relative;
+  width: 25%;
+  height: 100%;
+}
+#app .bottom__menu .col_3 {
+  display: inline-block;
+  position: relative;
+  width: 25%;
+  height: 100%;
+}
+#app .bottom__menu .col_4 {
+  display: inline-block;
+  position: relative;
+  width: 25%;
+  height: 100%;
 }/*# sourceMappingURL=style.css.map */
