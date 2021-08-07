@@ -798,7 +798,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  height: 250px;
+  height: 220px;
   padding: 20px 60px;
 }
 #app .bottom__menu li {
@@ -832,4 +832,23 @@ body {
   position: relative;
   width: 25%;
   height: 100%;
+}
+#app .Product__tag {
+  width: 100%;
+  height: 150px;
+  padding: 20px 60px;
+}
+#app .Product__tag button {
+  margin: 20px 8px 0px 0px;
+  padding: 3px 7px;
+  border-radius: 11px;
+  font-size: 14px;
+  color: #2e2c2c;
+  font-weight: bold;
+  border: none;
+}
+#app .copyright {
+  width: 100%;
+  height: 50px;
+  padding: 0px 60px;
 }/*# sourceMappingURL=style.css.map */
