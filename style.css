@@ -1,37 +1,20 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
   font-family: "Raleway", sans-serif;
 }
 
-#app.home {
-  display: block;
-  min-height: 100vh;
-}
-#app .arrow {
-  border: solid #49a046;
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  padding: 3px;
-  margin: 4px 0 0 6px;
-}
-#app .down {
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-}
-#app .right {
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-}
-#app .top {
+.top {
   display: block;
   width: 100%;
 }
-#app .top__menu {
+
+.top__menu {
   display: block;
   position: relative;
   width: 90%;
@@ -41,61 +24,86 @@ body {
   border-bottom: 2px solid #eeeaea;
   font-size: 15px;
 }
-#app .top__menu .contact_menu {
+
+@media (max-width: 599.95px) {
+  .top__menu {
+    background-color: red;
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+  .top__menu {
+    background-color: green;
+  }
+}
+
+.top__menu .contact_menu {
   display: inline;
   float: left;
   width: 50%;
   padding-top: 12px;
 }
-#app .top__menu .contact_menu a {
+
+.top__menu .contact_menu a {
   padding-right: 20px;
 }
-#app .top__menu .contact_menu #chat {
+
+.top__menu .contact_menu #chat {
   color: #49a046;
 }
-#app .top__menu .right_menu {
+
+.top__menu .right_menu {
   display: block;
   float: right;
   width: 50%;
 }
-#app .top__menu .right_menu .top__navigation {
+
+.top__menu .right_menu .top__navigation {
   float: right;
   padding-top: 12px;
   list-style-type: none;
   text-decoration: none;
 }
-#app .top__menu .right_menu .top__navigation li {
+
+.top__menu .right_menu .top__navigation li {
   float: left;
 }
-#app .top__menu .right_menu .top__navigation li a {
+
+.top__menu .right_menu .top__navigation li a {
   text-decoration: none;
   padding-left: 25px;
   color: #49a046;
 }
-#app .heading {
+
+.heading {
   display: block;
   position: relative;
   width: 100%;
   height: 150px;
 }
-#app .heading .logo {
+
+.heading .logo {
   display: inline-block;
   position: relative;
   float: left;
   width: 25%;
   height: 100%;
 }
-#app .heading .logo h1 {
+
+.heading .logo h1 {
   position: relative;
   padding: 45px 20px 0px 45px;
 }
-#app .heading .search__baar {
+
+.heading .search__baar {
   display: inline-block;
   position: relative;
   width: 50%;
   height: 100%;
 }
-#app .heading .search__baar .search__box {
+
+.heading .search__baar .search__box {
   position: relative;
   width: 450px;
   height: 40px;
@@ -106,7 +114,8 @@ body {
   color: black;
   font-weight: bolder;
 }
-#app .heading .search__baar .search__box button {
+
+.heading .search__baar .search__box button {
   margin: 4px 9px;
   padding: 8px;
   font-size: 14px;
@@ -114,24 +123,28 @@ body {
   border-style: none;
   background: transparent;
 }
-#app .heading .profile__cart {
+
+.heading .profile__cart {
   display: inline-block;
   float: right;
   width: 25%;
   height: 100%;
 }
-#app .navigation {
+
+.navigation {
   display: block;
   width: 100%;
   height: 45px;
   background-color: #eeeaea;
 }
-#app .dropdown {
+
+.dropdown {
   float: left;
   overflow: hidden;
   padding-left: 18px;
 }
-#app .dropdown .bakery {
+
+.dropdown .bakery {
   cursor: pointer;
   font-size: 16px;
   border: none;
@@ -141,15 +154,18 @@ body {
   font-family: inherit;
   margin: 0;
 }
-#app .dropdown-content {
+
+.dropdown-content {
   display: none;
   position: absolute;
   background-color: red;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
-#app .dropdown-content a {
+
+.dropdown-content a {
   float: none;
   color: black;
   padding: 12px 16px;
@@ -157,12 +173,108 @@ body {
   display: block;
   text-align: left;
 }
+
+.bottom__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  height: 220px;
+  padding: 20px 60px;
+}
+
+.bottom__menu li {
+  list-style-type: none;
+  padding-top: 10px;
+}
+
+.bottom__menu li a {
+  text-decoration: none;
+  color: #49a046;
+}
+
+.bottom__menu .col_1 {
+  display: inline-block;
+  position: relative;
+  width: 25%;
+  height: 100%;
+}
+
+.bottom__menu .col_2 {
+  display: inline-block;
+  position: relative;
+  width: 25%;
+  height: 100%;
+}
+
+.bottom__menu .col_3 {
+  display: inline-block;
+  position: relative;
+  width: 25%;
+  height: 100%;
+}
+
+.bottom__menu .col_4 {
+  display: inline-block;
+  position: relative;
+  width: 25%;
+  height: 100%;
+}
+
+.Product__tag {
+  width: 100%;
+  height: 150px;
+  padding: 20px 60px;
+}
+
+.Product__tag button {
+  margin: 20px 8px 0px 0px;
+  padding: 3px 7px;
+  border-radius: 11px;
+  font-size: 14px;
+  color: #2e2c2c;
+  font-weight: bold;
+  border: none;
+}
+
+.copyright {
+  width: 100%;
+  height: 50px;
+  padding: 0px 60px;
+}
+
+#app.home {
+  display: block;
+  min-height: 100vh;
+}
+
+#app .arrow {
+  border: solid #49a046;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  margin: 4px 0 0 6px;
+}
+
+#app .down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+#app .right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
 #app .posts1 {
   display: block;
   position: relative;
   width: 100%;
   height: 360px;
 }
+
 #app .posts1 .Category__menu {
   position: relative;
   float: left;
@@ -170,14 +282,17 @@ body {
   height: 100%;
   padding: 45px 35px;
 }
+
 #app .posts1 .Category__menu li {
   list-style-type: none;
   padding: 5px;
 }
+
 #app .posts1 .Category__menu li a {
   color: #49a046;
   font-size: 13px;
 }
+
 #app .posts1 .Category__menu button {
   margin-top: 35px;
   padding: 10px;
@@ -186,6 +301,7 @@ body {
   background-color: #eeeaea;
   border: none;
 }
+
 #app .posts1 .Banner1 {
   display: inline-block;
   position: relative;
@@ -194,6 +310,7 @@ body {
   padding: 0px;
   margin: 0px;
 }
+
 #app .posts1 .Banner1 .subfocus {
   position: relative;
   width: 93%;
@@ -203,12 +320,14 @@ body {
   border-radius: 10px;
   background-image: url("bgpic2.jpg");
 }
+
 #app .posts1 .Banner1 .subfocus p {
   color: #49a046;
   font-weight: bold;
   font-size: 14px;
   padding-bottom: 10px;
 }
+
 #app .posts1 .Banner1 .subfocus button {
   margin-top: 120px;
   padding: 8px;
@@ -217,12 +336,14 @@ body {
   border-radius: 10px;
   background: transparent;
 }
+
 #app .posts1 .Banner2 {
   position: relative;
   float: right;
   width: 37%;
   height: 100%;
 }
+
 #app .posts1 .Banner2 .subfocus {
   position: relative;
   width: 93%;
@@ -232,12 +353,14 @@ body {
   border-radius: 10px;
   background-image: url("bgpic2.jpg");
 }
+
 #app .posts1 .Banner2 .subfocus p {
   color: #49a046;
   font-weight: bold;
   font-size: 14px;
   padding-bottom: 10px;
 }
+
 #app .posts1 .Banner2 .subfocus button {
   margin-top: 120px;
   padding: 8px;
@@ -246,12 +369,17 @@ body {
   border-radius: 10px;
   background: transparent;
 }
+
 #app .posts2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 100%;
   height: 360px;
 }
+
 #app .posts2 .Best__Selling {
   display: inline-block;
   position: relative;
@@ -259,14 +387,17 @@ body {
   height: 100%;
   padding: 45px 35px;
 }
+
 #app .posts2 .Best__Selling li {
   list-style-type: none;
   padding: 5px;
 }
+
 #app .posts2 .Best__Selling li a {
   color: #49a046;
   font-size: 13px;
 }
+
 #app .posts2 .Best__Selling button {
   margin-top: 35px;
   padding: 10px;
@@ -275,12 +406,14 @@ body {
   background-color: #eeeaea;
   border: none;
 }
+
 #app .posts2 .Product1 {
   display: inline-block;
   position: relative;
   width: 25%;
   height: 100%;
 }
+
 #app .posts2 .Product1 .container {
   position: relative;
   width: 85%;
@@ -290,6 +423,7 @@ body {
   border-radius: 10px;
   border: 2px solid #c7c4c4;
 }
+
 #app .posts2 .Product1 .container .sub_container {
   position: relative;
   width: 98%;
@@ -297,12 +431,15 @@ body {
   border-radius: 10px;
   background-color: #eeeaea;
 }
+
 #app .posts2 .Product1 .container h4 {
   padding: 10px 0px;
 }
+
 #app .posts2 .Product1 .container p {
   font-size: 12px;
 }
+
 #app .posts2 .Product1 .container button {
   margin-left: 45px;
   padding: 8px;
@@ -311,12 +448,14 @@ body {
   background-color: #49a046;
   border: 2px solid #0d460b;
 }
+
 #app .posts2 .Product2 {
   display: inline-block;
   position: relative;
   width: 25%;
   height: 100%;
 }
+
 #app .posts2 .Product2 .container {
   position: relative;
   width: 85%;
@@ -326,6 +465,7 @@ body {
   border-radius: 10px;
   border: 2px solid #c7c4c4;
 }
+
 #app .posts2 .Product2 .container .sub_container {
   position: relative;
   width: 98%;
@@ -333,12 +473,15 @@ body {
   border-radius: 10px;
   background-color: #eeeaea;
 }
+
 #app .posts2 .Product2 .container h4 {
   padding: 10px 0px;
 }
+
 #app .posts2 .Product2 .container p {
   font-size: 12px;
 }
+
 #app .posts2 .Product2 .container button {
   margin-left: 45px;
   padding: 8px;
@@ -347,12 +490,14 @@ body {
   background-color: #49a046;
   border: 2px solid #0d460b;
 }
+
 #app .posts2 .Product3 {
   position: relative;
   float: right;
   width: 25%;
   height: 100%;
 }
+
 #app .posts2 .Product3 .container {
   position: relative;
   width: 85%;
@@ -362,6 +507,7 @@ body {
   border-radius: 10px;
   border: 2px solid #c7c4c4;
 }
+
 #app .posts2 .Product3 .container .sub_container {
   position: relative;
   width: 98%;
@@ -369,12 +515,15 @@ body {
   border-radius: 10px;
   background-color: #eeeaea;
 }
+
 #app .posts2 .Product3 .container h4 {
   padding: 10px 0px;
 }
+
 #app .posts2 .Product3 .container p {
   font-size: 12px;
 }
+
 #app .posts2 .Product3 .container button {
   margin-left: 45px;
   padding: 8px;
@@ -383,12 +532,17 @@ body {
   background-color: #49a046;
   border: 2px solid #0d460b;
 }
+
 #app .posts3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 100%;
   height: 360px;
 }
+
 #app .posts3 .Best__Selling {
   display: inline-block;
   position: relative;
@@ -396,14 +550,17 @@ body {
   height: 100%;
   padding: 45px 35px;
 }
+
 #app .posts3 .Best__Selling li {
   list-style-type: none;
   padding: 5px;
 }
+
 #app .posts3 .Best__Selling li a {
   color: #49a046;
   font-size: 13px;
 }
+
 #app .posts3 .Best__Selling button {
   margin-top: 35px;
   padding: 10px;
@@ -412,12 +569,14 @@ body {
   background-color: #eeeaea;
   border: none;
 }
+
 #app .posts3 .Product1 {
   display: inline-block;
   position: relative;
   width: 25%;
   height: 100%;
 }
+
 #app .posts3 .Product1 .container {
   position: relative;
   width: 85%;
@@ -427,6 +586,7 @@ body {
   border-radius: 10px;
   border: 2px solid #c7c4c4;
 }
+
 #app .posts3 .Product1 .container .sub_container {
   position: relative;
   width: 98%;
@@ -434,12 +594,15 @@ body {
   border-radius: 10px;
   background-color: #eeeaea;
 }
+
 #app .posts3 .Product1 .container h4 {
   padding: 10px 0px;
 }
+
 #app .posts3 .Product1 .container p {
   font-size: 12px;
 }
+
 #app .posts3 .Product1 .container button {
   margin-left: 45px;
   padding: 8px;
@@ -448,12 +611,14 @@ body {
   background-color: #49a046;
   border: 2px solid #0d460b;
 }
+
 #app .posts3 .Product2 {
   display: inline-block;
   position: relative;
   width: 25%;
   height: 100%;
 }
+
 #app .posts3 .Product2 .container {
   position: relative;
   width: 85%;
@@ -463,6 +628,7 @@ body {
   border-radius: 10px;
   border: 2px solid #c7c4c4;
 }
+
 #app .posts3 .Product2 .container .sub_container {
   position: relative;
   width: 98%;
@@ -470,12 +636,15 @@ body {
   border-radius: 10px;
   background-color: #eeeaea;
 }
+
 #app .posts3 .Product2 .container h4 {
   padding: 10px 0px;
 }
+
 #app .posts3 .Product2 .container p {
   font-size: 12px;
 }
+
 #app .posts3 .Product2 .container button {
   margin-left: 45px;
   padding: 8px;
@@ -484,12 +653,14 @@ body {
   background-color: #49a046;
   border: 2px solid #0d460b;
 }
+
 #app .posts3 .Product3 {
   position: relative;
   float: right;
   width: 25%;
   height: 100%;
 }
+
 #app .posts3 .Product3 .container {
   position: relative;
   width: 85%;
@@ -499,6 +670,7 @@ body {
   border-radius: 10px;
   border: 2px solid #c7c4c4;
 }
+
 #app .posts3 .Product3 .container .sub_container {
   position: relative;
   width: 98%;
@@ -506,12 +678,15 @@ body {
   border-radius: 10px;
   background-color: #eeeaea;
 }
+
 #app .posts3 .Product3 .container h4 {
   padding: 10px 0px;
 }
+
 #app .posts3 .Product3 .container p {
   font-size: 12px;
 }
+
 #app .posts3 .Product3 .container button {
   margin-left: 45px;
   padding: 8px;
@@ -520,24 +695,34 @@ body {
   background-color: #49a046;
   border: 2px solid #0d460b;
 }
+
 #app .Customer_review {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 100%;
   height: 360px;
 }
+
 #app .posts4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 100%;
   height: 360px;
 }
+
 #app .posts4 .Product1 {
   display: inline-block;
   position: relative;
   width: 25%;
   height: 100%;
 }
+
 #app .posts4 .Product1 .container {
   position: relative;
   width: 85%;
@@ -547,6 +732,7 @@ body {
   border-radius: 10px;
   border: 2px solid #c7c4c4;
 }
+
 #app .posts4 .Product1 .container .sub_container {
   position: relative;
   width: 98%;
@@ -554,12 +740,15 @@ body {
   border-radius: 10px;
   background-color: #eeeaea;
 }
+
 #app .posts4 .Product1 .container h4 {
   padding: 10px 0px;
 }
+
 #app .posts4 .Product1 .container p {
   font-size: 12px;
 }
+
 #app .posts4 .Product1 .container button {
   margin-left: 45px;
   padding: 8px;
@@ -568,12 +757,14 @@ body {
   background-color: #49a046;
   border: 2px solid #0d460b;
 }
+
 #app .posts4 .Product2 {
   display: inline-block;
   position: relative;
   width: 25%;
   height: 100%;
 }
+
 #app .posts4 .Product2 .container {
   position: relative;
   width: 85%;
@@ -583,6 +774,7 @@ body {
   border-radius: 10px;
   border: 2px solid #c7c4c4;
 }
+
 #app .posts4 .Product2 .container .sub_container {
   position: relative;
   width: 98%;
@@ -590,12 +782,15 @@ body {
   border-radius: 10px;
   background-color: #eeeaea;
 }
+
 #app .posts4 .Product2 .container h4 {
   padding: 10px 0px;
 }
+
 #app .posts4 .Product2 .container p {
   font-size: 12px;
 }
+
 #app .posts4 .Product2 .container button {
   margin-left: 45px;
   padding: 8px;
@@ -604,12 +799,14 @@ body {
   background-color: #49a046;
   border: 2px solid #0d460b;
 }
+
 #app .posts4 .Product3 {
   position: relative;
   float: right;
   width: 25%;
   height: 100%;
 }
+
 #app .posts4 .Product3 .container {
   position: relative;
   width: 85%;
@@ -619,6 +816,7 @@ body {
   border-radius: 10px;
   border: 2px solid #c7c4c4;
 }
+
 #app .posts4 .Product3 .container .sub_container {
   position: relative;
   width: 98%;
@@ -626,12 +824,15 @@ body {
   border-radius: 10px;
   background-color: #eeeaea;
 }
+
 #app .posts4 .Product3 .container h4 {
   padding: 10px 0px;
 }
+
 #app .posts4 .Product3 .container p {
   font-size: 12px;
 }
+
 #app .posts4 .Product3 .container button {
   margin-left: 45px;
   padding: 8px;
@@ -640,12 +841,14 @@ body {
   background-color: #49a046;
   border: 2px solid #0d460b;
 }
+
 #app .posts4 .Product4 {
   position: relative;
   float: right;
   width: 25%;
   height: 100%;
 }
+
 #app .posts4 .Product4 .container {
   position: relative;
   width: 85%;
@@ -655,6 +858,7 @@ body {
   border-radius: 10px;
   border: 2px solid #c7c4c4;
 }
+
 #app .posts4 .Product4 .container .sub_container {
   position: relative;
   width: 98%;
@@ -662,12 +866,15 @@ body {
   border-radius: 10px;
   background-color: #eeeaea;
 }
+
 #app .posts4 .Product4 .container h4 {
   padding: 10px 0px;
 }
+
 #app .posts4 .Product4 .container p {
   font-size: 12px;
 }
+
 #app .posts4 .Product4 .container button {
   margin-left: 45px;
   padding: 8px;
@@ -676,28 +883,40 @@ body {
   background-color: #49a046;
   border: 2px solid #0d460b;
 }
+
 #app .Blog_area {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 100%;
   height: 500px;
 }
+
 #app .Blog_area .containt_area {
   display: block;
   position: relative;
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   width: 98%;
   height: 95%;
   margin: auto;
   padding: 30px 28px;
 }
+
 #app .Blog_area .containt_area .top__bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 100%;
   height: 13%;
   padding: 5px 20px;
 }
+
 #app .Blog_area .containt_area .top__bar button {
   padding: 8px;
   margin-left: 920px;
@@ -705,22 +924,29 @@ body {
   border-radius: 10px;
   border: 2px solid #0d460b;
 }
+
 #app .Blog_area .containt_area .main__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 100%;
   height: 93%;
   padding: 10px 20px;
 }
+
 #app .Blog_area .containt_area .main__info .box1 {
   display: inline-block;
   position: relative;
   width: 40%;
   height: 95%;
   background-color: #c7c4c4;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(black));
   background-image: linear-gradient(white, black);
   border-radius: 10px;
 }
+
 #app .Blog_area .containt_area .main__info .box1 button {
   margin: 20px 15px;
   padding: 3px 5px;
@@ -729,6 +955,7 @@ body {
   font-size: 15px;
   border: none;
 }
+
 #app .Blog_area .containt_area .main__info .box2 {
   display: inline-block;
   position: relative;
@@ -736,6 +963,7 @@ body {
   height: 95%;
   margin-left: 25px;
 }
+
 #app .Blog_area .containt_area .main__info .box2 .sub_container {
   position: relative;
   width: 92%;
@@ -744,6 +972,7 @@ body {
   border-radius: 10px;
   background-color: #eeeaea;
 }
+
 #app .Blog_area .containt_area .main__info .box2 button {
   margin: 10px;
   padding: 3px 5px;
@@ -752,15 +981,18 @@ body {
   font-size: 15px;
   border: none;
 }
+
 #app .Blog_area .containt_area .main__info .box2 h4 {
   margin: 10px;
   font-weight: bold;
 }
+
 #app .Blog_area .containt_area .main__info .box2 p {
   margin: 10px;
   word-spacing: 10px;
   font-size: 12px;
 }
+
 #app .Blog_area .containt_area .main__info .box3 {
   display: inline-block;
   position: relative;
@@ -768,23 +1000,30 @@ body {
   height: 95%;
   margin-left: 25px;
 }
+
 #app .Blog_area .containt_area .main__info .box3 h3 {
   margin: 10px;
 }
+
 #app .Blog_area .containt_area .main__info .box3 p {
   margin: 0px 0px 48px 10px;
   word-spacing: 10px;
   font-size: 12px;
 }
+
 #app .Blog_area .containt_area .main__info .box4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   position: relative;
   width: 13%;
   height: 95%;
   float: right;
   margin-left: auto;
 }
+
 #app .Blog_area .containt_area .main__info .box4 .stiker {
   display: block;
   position: relative;
@@ -794,61 +1033,4 @@ body {
   background-color: #eeeaea;
   border-radius: 10px;
 }
-#app .bottom__menu {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  height: 220px;
-  padding: 20px 60px;
-}
-#app .bottom__menu li {
-  list-style-type: none;
-  padding-top: 10px;
-}
-#app .bottom__menu li a {
-  text-decoration: none;
-  color: #49a046;
-}
-#app .bottom__menu .col_1 {
-  display: inline-block;
-  position: relative;
-  width: 25%;
-  height: 100%;
-}
-#app .bottom__menu .col_2 {
-  display: inline-block;
-  position: relative;
-  width: 25%;
-  height: 100%;
-}
-#app .bottom__menu .col_3 {
-  display: inline-block;
-  position: relative;
-  width: 25%;
-  height: 100%;
-}
-#app .bottom__menu .col_4 {
-  display: inline-block;
-  position: relative;
-  width: 25%;
-  height: 100%;
-}
-#app .Product__tag {
-  width: 100%;
-  height: 150px;
-  padding: 20px 60px;
-}
-#app .Product__tag button {
-  margin: 20px 8px 0px 0px;
-  padding: 3px 7px;
-  border-radius: 11px;
-  font-size: 14px;
-  color: #2e2c2c;
-  font-weight: bold;
-  border: none;
-}
-#app .copyright {
-  width: 100%;
-  height: 50px;
-  padding: 0px 60px;
-}/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */

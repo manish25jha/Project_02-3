@@ -1,0 +1,16 @@
+$mobileDeviceSie : 599.95px;
+$deviceMinWidth:600px;
+$deviceMaxWidth:900px;
+
+
+@mixin mobileDevice {
+    @media (max-width:#{$mobileDeviceSie}) {
+        @content
+    }
+}
+
+@mixin mediumDevice($minDevWidth : $deviceMinWidth , $mxDevWidth : $deviceMaxWidth ) {
+    @media (min-width:#{$minDevWidth}) and (max-width:#{$mxDevWidth}) {
+        @content
+    }
+}
